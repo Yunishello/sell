@@ -151,4 +151,9 @@ class PostsController extends Controller
             
             return view('pages.result', ['posts' => $posts]);
     }
+    public function admin() {
+        $posts = Post::latest()->get();
+        // return $posts;
+        return view('post.admin')->with('posts', $posts);
+    }
 }

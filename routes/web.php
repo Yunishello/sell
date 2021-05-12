@@ -37,7 +37,7 @@ Route::get('/posts/{posts}', 'PostsController@show');
 
 Route::get('signin', 'LoginController@index');
 
-Route::post('/signin', 'LoginController@authenticate');
+// Route::post('/signin', 'LoginController@authenticate');
 Route::post('/signout', 'LoginController@signout');
 Route::get('logout', '\App\Http\Controllers\LoginController@logout');
 // Auth::routes();
@@ -58,3 +58,5 @@ Route::get('/profile', function () {
 Route::get('/settings', function () {
     return view('pages.settings');
 });
+
+Route::get('/admin', 'PostsController@admin')->name('admin');
