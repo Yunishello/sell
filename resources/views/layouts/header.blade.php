@@ -2,7 +2,7 @@
 <html>
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-<title>Sellpadi a Business Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>{{ config('app.name') }}</title>
 <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 <link rel="stylesheet" href="{{asset('css/bootstrap-select.css')}}">
 <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
